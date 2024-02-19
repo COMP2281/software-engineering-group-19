@@ -41,6 +41,7 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <span class="material-symbols-outlined">arrow_right_alt</span>
             </div>
 
             {/* Card 2 */}
@@ -51,6 +52,7 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <span class="material-symbols-outlined">arrow_right_alt</span>
             </div>
 
             {/* Card 3 */}
@@ -61,6 +63,7 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <span class="material-symbols-outlined">arrow_right_alt</span>
             </div>
           </div>
         </div>
