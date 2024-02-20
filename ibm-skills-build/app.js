@@ -1,7 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
 require('dotenv').config()
-const CourseModel = require('./channel.js')
 const path = require('path');
 
 const dbURL = process.env.MONGODB_URI;
