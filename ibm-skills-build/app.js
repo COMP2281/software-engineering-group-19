@@ -40,4 +40,25 @@ app.get("/data", async (req, res) => {
   }
 });
 
+//Post request to register a new user
+
+require("./userDetails")
+
+const User = mongoose.model("userDetail");
+
+app.post("/registration", async(req,res) =>{
+    const {username,name,email} = req.body;
+    try {
+        await User.create({
+            username,
+            uname:name,
+            uemail:email,
+        });
+        res.send({status:"Ok"});
+    }
+    catch (error){
+        res.send({status:"error"});
+    }
+})
+
 module.exports = app;
