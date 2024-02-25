@@ -1,73 +1,72 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  .login-container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .brand-section {
-    background-color: #0052cc; /* Replace with the exact color from the image */
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* Add additional styling, like the circular shapes and logo */
-  }
-  
-  .brand-section h1 {
-    color: white;
-    /* Add more styling for the logo text or replace with an image */
-  }
-  
-  .form-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff; /* Assuming a white background */
-  }
-  
-  .login-form {
-    width: 300px; /* Adjust width as necessary */
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .login-form input {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .login-form button {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0000ff; /* Replace with the button color from the image */
-    color: white;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .forgot-password {
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  .forgot-password a {
-    color: #0000ff; /* Use the color that fits the design */
-    text-decoration: none;
-  }
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.login-container {
+  display: flex;
+  height: 100%;
+}
+
+.brand-section {
+  flex: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Add additional styling, like the circular shapes and logo */
+}
+
+.brand-section img {
+  width: 100%;
+  max-width: 100%; /* Ensure the image does not exceed its original size */
+}
+
+.form-section {
+  flex: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Assuming a white background */
+}
+
+.login-form {
+  width: 300px; /* Adjust width as necessary */
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0000ff; /* Replace with the button color from the image */
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-password a {
+  color: #0000ff; /* Use the color that fits the design */
+  text-decoration: none;
+}
