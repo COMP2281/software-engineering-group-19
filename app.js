@@ -5,6 +5,12 @@ require('dotenv').config()
 const path = require('path');
 const fs = require('fs');
 
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
+
+//To encrypt the password
+const JWT_SECRET = "sdjfbakjfhb[][{{sfjbflaqopxnbvt";
+
 //const dbURL = process.env.DB_URL
 const dbURL = "mongodb+srv://dxgd33:Password_1234@cluster0.ugkctfh.mongodb.net/"
 
@@ -93,3 +99,30 @@ app.post("/registration", async(req,res) =>{
         res.send({status:"error"});
     }
 })
+
+// Post method for logging in
+
+app.post('/login', async (req, res) => {
+  const {email,password} = req.body;
+  const user = await User.findOne({email});
+
+  //Check if user is registered
+  if (!user){
+    return res.json({error: "User not found."});
+  }
+
+  //Check password
+  if (await becrypt.compare(password, user.password)){
+    const token = jwt.sign({}, JWT_SECRET);
+
+    if (res.status(201)){
+        return res.json({status:"ok", data:token});
+    } else {
+        return res.json({status:"error"});
+    }
+    res.json({status:"error", error:"Incorrect password"});
+  }
+
+
+});
+
