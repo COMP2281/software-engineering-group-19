@@ -11,7 +11,7 @@ const Login = () => {
   async function submit(e){
     e.preventDefault();
     try{
-      fetch("http://localhost:5000/login", {
+      fetch("/login", { //"http://localhost:5000/login", {
         method: "POST",
         crossDomain: true,
         headers: {
