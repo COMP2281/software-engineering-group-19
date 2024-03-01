@@ -1,6 +1,6 @@
 import "../styles/homepage.css";
 
-function HomePage() {
+function Homepage() {
   return (
     <div className="font"> 
       <p>IBM Skills Build Setup</p>
@@ -8,4 +8,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Homepage;

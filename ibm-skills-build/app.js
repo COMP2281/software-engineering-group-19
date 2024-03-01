@@ -1,87 +1,128 @@
-const express = require('express');
-const mongoose = require('mongoose');
-require('dotenv').config();
-const path = require('path');
+// const express = require('express')
+// const mongoose = require('mongoose')
+// require('dotenv').config()
+// //const CourseModel = require('./models/channel.js')
+// const path = require('path');
+// const fs = require('fs');
 
-// Use process.env for sensitive information
-//const dbURL = process.env.MONGODB_URI;
-const dbURL = "mongodb+srv://dxgd33:Password_1234@cluster0.ugkctfh.mongodb.net/"
+// const jwt = require('jsonwebtoken');
+// const bcrypt = require('bcryptjs');
 
-// Express app
-const app = express();
+// //To encrypt the password
+// const JWT_SECRET = "sdjfbakjfhb[][{{sfjbflaqopxnbvt";
 
-app.use(express.json());
-app.use(express.static(path.join(__dirname, 'client')));
+// //const dbURL = process.env.DB_URL
+// const dbURL = "mongodb+srv://dxgd33:Password_1234@cluster0.ugkctfh.mongodb.net/"
 
-// Connect to MongoDB Atlas
-mongoose
-  .connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log('Connected to the database');
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// //express app
+// const app = express()
 
-// Define a simple route for testing
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
+// app.use(express.json());
 
+// app.use(express.static(path.join(__dirname, 'client')));
 
-
-require("./userDetails")
-
-const User = mongoose.model("userDetail");
-
-app.post("/registration", async(req,res) =>{
-  const {username,name,email,password} = req.body;
-  try {
-    await User.create({
-      username,
-      uname:name,
-      uemail:email,
-      upassword:password,
-    });
-    res.send({status:"Ok"});
-  } 
-  catch (error){
-    res.send({status:"error"});
-  }
-});
-
-// Post method for logging in
-
-app.post('/login', async (req, res) => {
-  const {email,password} = req.body;
-  const user = await User.findOne({email});
-
-  //Check if user is registered
-  if (!user){
-    return res.json({error: "User not found."});
-  }
-
-  //Check password
-  if (await becrypt.compare(password, user.password)){
-    const token = jwt.sign({}, JWT_SECRET);
-
-    if (res.status(201)){
-        return res.json({status:"ok", data:token});
-    } else {
-        return res.json({status:"error"});
-    }
-    res.json({status:"error", error:"Incorrect password"});
-  }
+// //connect to db on mongodb atlas
+// mongoose
+//     .connect(dbURL, {
+//         useNewUrlParser: true,
+//     })
+//     .then(() => {
+//         console.info('Connected to the database');
+//     })
+//     .catch((error) => {
+//         console.log(error)
+//     })
 
 
-});
+// /*
+// app.get("/", (req, res) => {
+//       res.send("Hello, world!");
+//   });
+  
+  
+//   const newCourse = new CourseModel({
+//       id: 1,
+//       title: 'title',
+//       description: 'description',
+//       link: 'hello'
+//   });
+  
+//   newCourse.save()
+//       .then(() => console.log('Course saved'))
+//       .catch((error) => console.log(error));
+  
+
+//       app.get('/courseSearch', async (req, res) => {
+//         if (!req.query.q) {
+//             return res.status(400).send('Missing query parameter: q');
+//         }
+    
+//         const query = req.query.q.toLowerCase();
+          
+//         try {
+//           const courses = await CourseModel.find();
+//           const results = courses.filter(
+//             (course) => course.title.toLowerCase().includes(query)
+//               || course.link.toLowerCase().includes(query)
+//           );
+//           const formattedResults = results.map((course) => ({
+//             title: course.title,
+//             link: course.link,
+//           }));
+//           res.setHeader('Content-Type', 'application/json');
+//           res.status(200).json(formattedResults);
+//         } catch (err) {
+//           console.error(err);
+//           res.status(500).send('An error occurred while searching.');
+//         }
+//     });
+
+// */
+// module.exports = app;
 
 
-module.exports = app;
+// require("./userDetails")
+
+// const User = mongoose.model("userDetail");
+
+// app.post("/registration", async(req,res) =>{
+//     const {username,name,email} = req.body;
+//     try {
+//         await User.create({
+//             username,
+//             uname:name,
+//             uemail:email,
+//         });
+//         res.send({status:"Ok"});
+//     }
+//     catch (error){
+//         res.send({status:"error"});
+//     }
+// })
+
+// // Post method for logging in
+
+// app.post('/login', async (req, res) => {
+//   const {email,password} = req.body;
+//   const user = await User.findOne({email});
+
+//   //Check if user is registered
+//   if (!user){
+//     return res.json({error: "User not found."});
+//   }
+
+//   //Check password
+//   if (await becrypt.compare(password, user.password)){
+//     const token = jwt.sign({}, JWT_SECRET);
+
+//     if (res.status(201)){
+//         return res.json({status:"ok", data:token});
+//     } else {
+//         return res.json({status:"error"});
+//     }
+//     res.json({status:"error", error:"Incorrect password"});
+//   }
 
 
-// Start the server
-//const PORT = process.env.PORT || 3000;
-//app.listen(PORT, () => {
-//  console.log(`Server is running on http://localhost:${PORT}`);
-//});
+// });
+
