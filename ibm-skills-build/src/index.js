@@ -38,7 +38,7 @@ const App = () => {
   return (
     <React.StrictMode>
       <HomePage />
-      <Calendar
+      {/* <Calendar
         localizer={localizer}
         events={events}
         startAccessor="start"
@@ -48,7 +48,7 @@ const App = () => {
         onSelectSlot={handleSelect}
         onSelectEvent={handleEventClick}
         popup
-      />
+      /> */}
     </React.StrictMode>
   );
 };
