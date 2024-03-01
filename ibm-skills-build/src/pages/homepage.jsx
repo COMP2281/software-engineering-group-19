@@ -1,6 +1,6 @@
 import "../styles/homepage.css";
 
-const HomePage = () => {
+const Homepage = () => {
   return (
     <>
       <nav className="navbar">
@@ -74,4 +74,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Homepage;

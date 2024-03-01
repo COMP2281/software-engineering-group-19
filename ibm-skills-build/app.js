@@ -1,64 +1,128 @@
-const express = require("express");
-const mongoose = require("mongoose");
-require("dotenv").config();
-const path = require("path");
+// const express = require('express')
+// const mongoose = require('mongoose')
+// require('dotenv').config()
+// //const CourseModel = require('./models/channel.js')
+// const path = require('path');
+// const fs = require('fs');
 
-const dbURL = process.env.MONGODB_URI;
+// const jwt = require('jsonwebtoken');
+// const bcrypt = require('bcryptjs');
 
-// express app
-const app = express();
+// //To encrypt the password
+// const JWT_SECRET = "sdjfbakjfhb[][{{sfjbflaqopxnbvt";
 
-app.use(express.json());
-app.use(express.static(path.join(__dirname, "client")));
+// //const dbURL = process.env.DB_URL
+// const dbURL = "mongodb+srv://dxgd33:Password_1234@cluster0.ugkctfh.mongodb.net/"
 
-// connect to db on MongoDB Atlas
-mongoose
-  .connect(dbURL)
-  .then(() => {
-    console.info("Connected to the database");
-  })
-  .catch((error) => {
-    console.log(error);
-  });
-app.get("/", (req, res) => {
-  res.send("Hello, world!");
-});
+// //express app
+// const app = express()
 
-// Route to retrieve and console log data from the database
-app.get("/data", async (req, res) => {
-  try {
-    // Directly query the "courses" collection in MongoDB
-    const data = await mongoose.connection.db
-      .collection("courses")
-      .find()
-      .toArray();
-    console.log(data);
-    res.json(data);
-  } catch (error) {
-    console.error("Error fetching data from the 'courses' collection:", error);
-    res.status(500).json({ error: "Internal Server Error" });
-  }
-});
+// app.use(express.json());
 
-//Post request to register a new user
+// app.use(express.static(path.join(__dirname, 'client')));
 
-require("./userDetails")
+// //connect to db on mongodb atlas
+// mongoose
+//     .connect(dbURL, {
+//         useNewUrlParser: true,
+//     })
+//     .then(() => {
+//         console.info('Connected to the database');
+//     })
+//     .catch((error) => {
+//         console.log(error)
+//     })
 
-const User = mongoose.model("userDetail");
 
-app.post("/registration", async(req,res) =>{
-    const {username,name,email} = req.body;
-    try {
-        await User.create({
-            username,
-            uname:name,
-            uemail:email,
-        });
-        res.send({status:"Ok"});
-    }
-    catch (error){
-        res.send({status:"error"});
-    }
-})
+// /*
+// app.get("/", (req, res) => {
+//       res.send("Hello, world!");
+//   });
+  
+  
+//   const newCourse = new CourseModel({
+//       id: 1,
+//       title: 'title',
+//       description: 'description',
+//       link: 'hello'
+//   });
+  
+//   newCourse.save()
+//       .then(() => console.log('Course saved'))
+//       .catch((error) => console.log(error));
+  
 
-module.exports = app;
+//       app.get('/courseSearch', async (req, res) => {
+//         if (!req.query.q) {
+//             return res.status(400).send('Missing query parameter: q');
+//         }
+    
+//         const query = req.query.q.toLowerCase();
+          
+//         try {
+//           const courses = await CourseModel.find();
+//           const results = courses.filter(
+//             (course) => course.title.toLowerCase().includes(query)
+//               || course.link.toLowerCase().includes(query)
+//           );
+//           const formattedResults = results.map((course) => ({
+//             title: course.title,
+//             link: course.link,
+//           }));
+//           res.setHeader('Content-Type', 'application/json');
+//           res.status(200).json(formattedResults);
+//         } catch (err) {
+//           console.error(err);
+//           res.status(500).send('An error occurred while searching.');
+//         }
+//     });
+
+// */
+// module.exports = app;
+
+
+// require("./userDetails")
+
+// const User = mongoose.model("userDetail");
+
+// app.post("/registration", async(req,res) =>{
+//     const {username,name,email} = req.body;
+//     try {
+//         await User.create({
+//             username,
+//             uname:name,
+//             uemail:email,
+//         });
+//         res.send({status:"Ok"});
+//     }
+//     catch (error){
+//         res.send({status:"error"});
+//     }
+// })
+
+// // Post method for logging in
+
+// app.post('/login', async (req, res) => {
+//   const {email,password} = req.body;
+//   const user = await User.findOne({email});
+
+//   //Check if user is registered
+//   if (!user){
+//     return res.json({error: "User not found."});
+//   }
+
+//   //Check password
+//   if (await becrypt.compare(password, user.password)){
+//     const token = jwt.sign({}, JWT_SECRET);
+
+//     if (res.status(201)){
+//         return res.json({status:"ok", data:token});
+//     } else {
+//         return res.json({status:"error"});
+//     }
+//     res.json({status:"error", error:"Incorrect password"});
+//   }
+
+
+// });
+
