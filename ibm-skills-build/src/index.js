@@ -1,13 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./index.css";
 import LoginPage from "./pages/login";
 import Homepage from "./pages/homepage";
 import {
   BrowserRouter,
-  Routes, // instead of "Switch"
+  Routes, 
   Route,
 } from "react-router-dom";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
