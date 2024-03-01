@@ -1,55 +1,60 @@
 import { useState } from "react";
 import "../styles/login.css";
 
-const port = 5000;
-
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const [email,setEmail]=useState('')
-  const [password,setPassword]=useState('')
+  const handleLogin = async (e) => {
+    e.preventDefault(); // Prevents the default form submission behavior
 
-  async function submit(e){
-    e.preventDefault();
-    try{
-      fetch("/login", { //"http://localhost:5000/login", {
-        method: "POST",
-        crossDomain: true,
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-        body: JSON.stringify({
-          email,
-          password,
-        }),
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          console.log(data, "userRegister"); //CHeck name
-        })
+    // Assuming you have an API endpoint at /api/login for authentication
+    const response = await fetch(`http://localhost:5000/api/login`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    });
 
+    if (response.ok) {
+      // Login successful
+      const data = await response.json();
+      console.log('Login Success:', data);
+      // Redirect user or save the login state
+    } else {
+      // Login failed
+      console.error('Login Failed');
+      // Show error message
     }
-    catch{
+  };
 
-    }
-  }
   return (
     <div className="login-container">
       <div className="background-image">
         <div className="content">
-          <img src="/ibm_logo.svg" alt="Logo" className="logo"/>
+          <img src="/assets/ibm_logo.svg" alt="Logo" className="logo"/>
           <p className="header">Skills Build</p>
         </div>
       </div>
       <div className="login-form">
-        {/* Your login form goes here */}
-        <form>
-          <h2>Login</h2>
-          {/* Input fields for email and password */}
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
-          {/* Submit button */}
+        <form onSubmit={handleLogin}>
+          <p>Hello!</p>
+          <p>Welcome back</p>
+          <input 
+            type="email" 
+            placeholder="Email" 
+            required 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input 
+            type="password" 
+            placeholder="Password" 
+            required 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)}
+          />
           <button type="submit">Login</button>
         </form>
       </div>
@@ -58,4 +63,3 @@ const Login = () => {
 };
 
 export default Login;
-
