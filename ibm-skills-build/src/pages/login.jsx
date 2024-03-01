@@ -1,29 +1,26 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loginMessage, setLoginMessage] = useState(""); // State to hold login success or error message
+  const [showTooltip, setShowTooltip] = useState(false); // State to show/hide tooltip
+
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
-    e.preventDefault(); // Prevents the default form submission behavior
-
-    // Simulated credentials
+    e.preventDefault();
     const mockEmail = "user@example.com";
-    const mockPassword = "password123";
+    const mockPassword = "1234";
 
-    // Simple login authentication using if statement
     if (email === mockEmail && password === mockPassword) {
-      // Login successful
       console.log("Login Success");
-      setLoginMessage("Login Successful!");
-      // Here you can redirect the user or update the state to reflect the  login status
+      navigate("/homepage");
     } else {
-      // Login failed
       console.error("Login Failed");
-      setLoginMessage("Login Failed: Incorrect email or password.");
-      // Optionally show an error message or handle the failed login
+      setShowTooltip(true); // Show tooltip on login failure
+      setTimeout(() => setShowTooltip(false), 3000); // Hide tooltip after 3 seconds
     }
   };
 
@@ -54,8 +51,13 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type="submit">Login</button>
+          {showTooltip && (
+            <div className="tooltip">
+              Login Failed: Incorrect email or password.
+              <span className="tooltip-text">Please try again.</span>
+            </div>
+          )}
         </form>
-        {loginMessage && <p>{loginMessage}</p>}
       </div>
     </div>
   );
