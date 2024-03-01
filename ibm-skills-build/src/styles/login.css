@@ -1,72 +1,42 @@
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 .login-container {
   display: flex;
-  height: 100%;
+  height: 100vh; /* 100% of the viewport height */
 }
 
-.brand-section {
-  flex: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Add additional styling, like the circular shapes and logo */
-}
-
-.brand-section img {
-  width: 100%;
-  max-width: 100%; /* Ensure the image does not exceed its original size */
-}
-
-.form-section {
-  flex: 40%;
+.background-image {
+  flex: 1; /* Takes up half of the container */
+  background: url('../../public/assets/Login.png') no-repeat center center;
+  background-size: cover; /* Cover the available space without being skewed */
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #ffffff; /* Assuming a white background */
+  align-items: center; /* Center the content vertically and horizontally */
+}
+
+.content {
+  text-align: center; /* Center the text inside the content div */
+}
+
+.logo {
+  max-width: 100px; /* Adjust based on your logo size */
+  margin-bottom: 20px; /* Space between logo and text */
 }
 
 .login-form {
-  width: 300px; /* Adjust width as necessary */
+  flex: 1; /* Takes up the other half of the container */
+  background-color: white; /* White background for the login form */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.input-group {
-  margin-bottom: 15px;
+form {
+  /* Style your form as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.login-form input {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-form button {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 10px;
-  background-color: #0000ff; /* Replace with the button color from the image */
-  color: white;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.forgot-password {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.forgot-password a {
-  color: #0000ff; /* Use the color that fits the design */
-  text-decoration: none;
+input, button {
+  margin: 10px;
+  padding: 10px;
 }

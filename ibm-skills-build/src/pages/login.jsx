@@ -34,25 +34,23 @@ const Login = () => {
 
     }
   }
-
   return (
     <div className="login-container">
-      <div className="brand-section">
-      <img src={require('./Login.png')} alt="IBM Logo" />
+      <div className="background-image">
+        <div className="content">
+          <img src="/ibm_logo.svg" alt="Logo" className="logo"/>
+          <p className="header">Skills Build</p>
+        </div>
       </div>
-      <div className="form-section">
-        <form className="login-form">
-          <h1>Hello!</h1>
-          <h4>Welcome back</h4>
-
-          <label htmlFor="Email">Email Address: </label>  
-          <input type="email" onChange={(e)=>{setEmail(e.target.value)}} id="email" name="email" placeholder="Email Address" required />
-          <label htmlFor="password">Password: </label>
-          <input type="password" onChange={(e)=>{setPassword(e.target.value)}} id="password" name="password" placeholder="Password" required />
-          <button type="submit" onClick={submit}>Login</button>
-          <p className="forgot-password">
-            <a href="#">Forgot Password</a>
-          </p>
+      <div className="login-form">
+        {/* Your login form goes here */}
+        <form>
+          <h2>Login</h2>
+          {/* Input fields for email and password */}
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          {/* Submit button */}
+          <button type="submit">Login</button>
         </form>
       </div>
     </div>
