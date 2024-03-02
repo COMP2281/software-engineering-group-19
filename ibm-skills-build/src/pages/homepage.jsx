@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/homepage.css";
 import coursesData from "../course.json"; // Adjust the path as necessary
 // Function to shuffle an array using the Fisher-Yates shuffle algorithm
@@ -74,4 +73,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Homepage;
