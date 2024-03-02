@@ -18,7 +18,7 @@ function shuffleArray(array) {
   return array;
 }
 
-const HomePage = () => {
+const Homepage = () => {
   // Shuffle the courses data and slice the first 4 elements
   const shuffledCourses = shuffleArray([...coursesData]).slice(0, 4);
   
