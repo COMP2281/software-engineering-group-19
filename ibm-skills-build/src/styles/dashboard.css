@@ -1,0 +1,123 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font setup */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main layout styles */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2C3E50; /* Dark blue shade */
+  color: #ECF0F1; /* Light grey shade */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+.nav-list .nav-item {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: #34495E; /* Slightly lighter blue shade */
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #ECF0F1; /* Light grey shade */
+  padding: 20px;
+}
+
+.search-bar {
+  background-color: #FFFFFF; /* White */
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.welcome-banner {
+  color: #2C3E50; /* Dark blue shade */
+  margin-bottom: 20px;
+}
+
+.video-banner {
+  margin-bottom: 20px;
+}
+
+.video-banner video {
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+}
+
+.carousel-section {
+  margin-bottom: 20px;
+}
+
+.carousel .carousel-item {
+  background-color: #FFFFFF; /* White */
+  padding: 20px;
+  text-align: center;
+  outline: none;
+}
+
+.carousel .carousel-item h3 {
+  color: #2C3E50; /* Dark blue shade */
+  margin-bottom: 10px;
+}
+
+.carousel .carousel-item p {
+  color: #7F8C8D; /* Grey shade */
+  margin-bottom: 10px;
+}
+
+.carousel .carousel-item button {
+  background-color: #2980B9; /* Button color */
+  color: #FFFFFF; /* White */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.carousel .carousel-item button:hover {
+  background-color: #3498DB; /* Lighter button color */
+}
+
+.calendar {
+  border-radius: 5px; /* Optional */
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Additional responsive adjustments may be needed */
