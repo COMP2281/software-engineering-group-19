@@ -1,116 +1,125 @@
-.dashboard {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-  }
-  
-  .top-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #2c3e50;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    margin-right: 1rem;
-  }
-  
-  .nav-links .active {
-    font-weight: bold;
-  }
-  
-  .logout-button {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
-  
-  .header {
-    padding: 2rem;
-    background-color: #ecf0f1;
-  }
-  
-  .header h1 {
-    margin: 0;
-  }
-  
-  .search-bar input {
-    padding: 0.5rem;
-    margin-top: 1rem;
-  }
-  
-  .main-content {
-    padding: 2rem;
-  }
-  
-  .featured-video {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  
-  .video-thumbnail {
-    width: 200px;
-    height: 112px;
-    background-color: #bdc3c7;
-    position: relative;
-  }
-  
-  .play-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #e74c3c;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .video-info h2 {
-    margin: 0 0 0.5rem 0;
-  }
-  
-  .video-info p {
-    margin: 0;
-  }
-  
-  .my-classes h3 {
-    display: inline;
-  }
-  
-  .see-all {
-    float: right;
-    text-decoration: none;
-    color: #3498db;
-  }
-  
-  .class-list {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .class-item {
-    background-color: #ecf0f1;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .class-item h4 {
-    margin: 0 0 0.5rem 0;
-  }
-  
-  .class-item p {
-    margin: 0 0 0.5rem 0;
-  }
-  
-  .class-item span {
-    display: block;
-    margin-bottom: 0.25rem;
-  }
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font setup */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main layout styles */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2C3E50; /* Dark blue shade */
+  color: #ECF0F1; /* Light grey shade */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+.nav-list .nav-item {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: #34495E; /* Slightly lighter blue shade */
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #ECF0F1; /* Light grey shade */
+  padding: 20px;
+}
+
+.search-bar {
+  background-color: #FFFFFF; /* White */
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.welcome-banner {
+  color: #2C3E50; /* Dark blue shade */
+  margin-bottom: 20px;
+}
+
+.video-banner {
+  margin-bottom: 20px;
+}
+
+.video-banner video {
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+}
+
+.carousel-section {
+  margin-bottom: 20px;
+}
+
+.carousel .carousel-item {
+  background-color: #FFFFFF; /* White */
+  padding: 20px;
+  text-align: center;
+  outline: none;
+}
+
+.carousel .carousel-item h3 {
+  color: #2C3E50; /* Dark blue shade */
+  margin-bottom: 10px;
+}
+
+.carousel .carousel-item p {
+  color: #7F8C8D; /* Grey shade */
+  margin-bottom: 10px;
+}
+
+.carousel .carousel-item button {
+  background-color: #2980B9; /* Button color */
+  color: #FFFFFF; /* White */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.carousel .carousel-item button:hover {
+  background-color: #3498DB; /* Lighter button color */
+}
+
+.calendar {
+  border-radius: 5px; /* Optional */
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Additional responsive adjustments may be needed */
+
   
