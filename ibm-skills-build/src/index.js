@@ -1,18 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./index.css";
-<<<<<<< Updated upstream
-import HomePage from "./pages/homepage";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <HomePage />
-  </React.StrictMode>
-=======
 import LoginPage from "./pages/login";
 import Homepage from "./pages/homepage";
-import Dashboard from "./pages/dashboard";
 import {
   BrowserRouter,
   Routes, 
@@ -26,9 +15,6 @@ root.render(
     <Routes>
       <Route path="/" element={<LoginPage />} />
       <Route path="/homepage" element={<Homepage/>} />
-      <Route path="/dashboard" element={<Dashboard/>} />
-
     </Routes>
   </BrowserRouter>
->>>>>>> Stashed changes
 );
