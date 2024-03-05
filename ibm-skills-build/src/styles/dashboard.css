@@ -8,27 +8,27 @@ body, h1, h2, h3, p, ul, li, button {
 /* Font setup */
 body {
   font-family: 'Arial', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Main layout styles */
 .dashboard-container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height to allow container to expand with content */
 }
 
 .sidebar {
   width: 250px;
-  background-color: #2C3E50; /* Dark blue shade */
-  color: #ECF0F1; /* Light grey shade */
+  background-color: #ECF0F1; /* Light grey shade */
+  color: #2C3E50; /* Dark blue shade */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-top: 20px;
+  justify-content: space-between; /* Aligns items to start and end of the flex container */
 }
 
 .logo {
-  width: 100px;
-  height: 40px;
+  width: 80px;
+  height: 30px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
@@ -37,9 +37,11 @@ body {
   list-style-type: none;
   font-size: 18px;
   line-height: 2.5;
+  flex-grow: 1; /* Allows this element to grow and push the exit item to the bottom */
 }
 
 .nav-list .nav-item {
+  margin-top: 0;
   padding-left: 20px;
   cursor: pointer;
 }
@@ -48,11 +50,20 @@ body {
   background-color: #34495E; /* Slightly lighter blue shade */
 }
 
+.nav-list .nav-exit {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
 .main-content {
-  flex-grow: 1;
-  background-color: #ECF0F1; /* Light grey shade */
+  flex-grow: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA; /* Light grey shade */
+  overflow-y: auto; /* Allow vertical scrolling */
   padding: 20px;
 }
+
 
 .search-bar {
   background-color: #FFFFFF; /* White */

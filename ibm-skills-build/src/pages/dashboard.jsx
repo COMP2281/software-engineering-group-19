@@ -5,6 +5,7 @@ import moment from 'moment';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import coursesData from '../course.json'; // Make sure the path is correct
+import "../styles/dashboard.css";
 
 const localizer = momentLocalizer(moment);
 
@@ -26,19 +27,29 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <nav className="sidebar">
-        <img src="/path-to-your-logo.png" alt="IBM SkillsBuild Logo" className="logo" />
+        <img src="/assets/ibm_logo.png" alt="IBM SkillsBuild Logo" className="logo" />
         <ul className="nav-list">
-          <li className="nav-item">Dashboard</li>
-          <li className="nav-item">Leaderboard</li>
-          <li className="nav-item">Homework</li>
-          <li className="nav-item">Chatbot</li>
-          <li className="nav-item">Logout</li>
+          <li className="nav-item">
+            <a href="/dashboard">Dashboard</a>
+          </li>
+          <li className="nav-item">
+            <a href="/leaderboard">Leaderboard</a>
+          </li>
+          <li className="nav-item">
+            <a href="/homework">Homework</a>
+          </li>
+          <li className="nav-item">
+            <a href="/chatbot">Chatbot</a>
+          </li>
+          <li className="nav-item">
+            <a href="/">Logout</a>
+          </li>
         </ul>
       </nav>
       <div className="main-content">
         <header>
           <div className="search-bar">
-            {/* Search bar content */}
+            <input type="text" />
           </div>
         </header>
         <div className="welcome-banner">
@@ -46,7 +57,7 @@ const Dashboard = () => {
           <p>Have a good day!</p>
         </div>
         <div className="video-banner">
-          {/* Video content should go here */}
+          <img src="/assets/Video.png" className="video" />
         </div>
         <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}>
           {coursesData.map(course => (
