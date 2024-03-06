@@ -1,84 +1,53 @@
-import React, { useState } from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import moment from 'moment';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import 'react-big-calendar/lib/css/react-big-calendar.css';
-import coursesData from '../course.json'; // Make sure the path is correct
-import "../styles/dashboard.css";
-
-const localizer = momentLocalizer(moment);
+import React from 'react';
+import '../styles/dashboard.css';
 
 const Dashboard = () => {
-  const [events, setEvents] = useState([]);
-
-  const addToCalendar = (course) => {
-    // Assuming each course is 1 hour for simplicity
-    const newEvent = {
-      title: course.title,
-      start: new Date(),
-      end: new Date(new Date().setHours(new Date().getHours() + 1)),
-      allDay: false
-    };
-
-    setEvents(events.concat(newEvent));
-  };
-
   return (
-    <div className="dashboard-container">
-      <nav className="sidebar">
-        <img src="/assets/ibm_logo.png" alt="IBM SkillsBuild Logo" className="logo" />
-        <ul className="nav-list">
-          <li className="nav-item">
-            <a href="/dashboard">Dashboard</a>
-          </li>
-          <li className="nav-item">
-            <a href="/leaderboard">Leaderboard</a>
-          </li>
-          <li className="nav-item">
-            <a href="/homework">Homework</a>
-          </li>
-          <li className="nav-item">
-            <a href="/chatbot">Chatbot</a>
-          </li>
-          <li className="nav-item">
-            <a href="/">Logout</a>
-          </li>
-        </ul>
+    <div className="dashboard">
+      <nav className="top-nav">
+        <div className="nav-links">
+          <a href="/dashboard" className="active">Dashboard</a>
+          <a href="/leaderboard">Leaderboard</a>
+          <a href="/homework">Homework</a>
+          <a href="/chatbot">Chatbot</a>
+        </div>
+        <button className="logout-button">Logout</button>
       </nav>
-      <div className="main-content">
-        <header>
-          <div className="search-bar">
-            <input type="text" />
+
+      <header className="header">
+        <h1>Welcome, Alex</h1>
+        <p>Have a good day!</p>
+        <div className="search-bar">
+          <input type="text" placeholder="Search" />
+        </div>
+      </header>
+
+      <main className="main-content">
+        <section className="featured-video">
+          <div className="video-thumbnail">
+            <button className="play-button"></button>
           </div>
-        </header>
-        <div className="welcome-banner">
-          <h1>Welcome, Alex</h1>
-          <p>Have a good day!</p>
-        </div>
-        <div className="video-banner">
-          <img src="/assets/Video.png" className="video" />
-        </div>
-        <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}>
-          {coursesData.map(course => (
-            <div key={course.id} className="carousel-item">
-              <h3>{course.title}</h3>
-              <p>{course.category}</p>
-              <p>{course.description}</p>
-              <a href={course.link} target="_blank" rel="noreferrer noopener">Go to course</a>
-              <button onClick={() => addToCalendar(course)}>Add to Calendar</button>
+          <div className="video-info">
+            <h2>Getting Started with Enterprise-grade AI</h2>
+            <p>2 Lessons | 1 Hour</p>
+          </div>
+        </section>
+
+        <section className="my-classes">
+          <h3>My Classes</h3>
+          <a href="/all-classes" className="see-all">See all</a>
+          <div className="class-list">
+            <div className="class-item">
+              <h4>Interaction</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius.</p>
+              <span>Wade Warren</span>
+              <span>8 Classes</span>
+              <span>3 Hours</span>
             </div>
-          ))}
-        </Carousel>
-        <div className="calendar">
-          <Calendar
-            localizer={localizer}
-            events={events}
-            startAccessor="start"
-            endAccessor="end"
-          />
-        </div>
-      </div>
+            {/* Repeat .class-item for each class */}
+          </div>
+        </section>
+      </main>
     </div>
   );
 };

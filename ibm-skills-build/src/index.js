@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import "./index.css";
 import LoginPage from "./pages/login";
 import Homepage from "./pages/homepage";
-import Dashboard from "./pages/dashboard";
+import Leaderboard from "./pages/leaderboard";
+
 import {
   BrowserRouter,
   Routes, 
@@ -17,8 +17,7 @@ root.render(
     <Routes>
       <Route path="/" element={<LoginPage />} />
       <Route path="/homepage" element={<Homepage/>} />
-      <Route path="/dashboard" element={<Dashboard/>} />
-
+      <Route path="/leaderboard" element={<Leaderboard/>} />
     </Routes>
   </BrowserRouter>
 );

@@ -1,0 +1,146 @@
+.leaderboard-container {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .sidebar {
+    background-color: #e8e8e8;
+    padding: 20px;
+    width: 200px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .logo-container {
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    max-width: 100%;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-item {
+    background: none;
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .nav-item.active {
+    color: #fff;
+    background-color: #0052cc;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .top-learners-title {
+    font-style: Bold;
+    color: black;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .user-actions {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 150px; /* Adjust based on your actual button sizes */
+  }
+  
+  .action-item {
+    background: none;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .learner-scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .learner-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* space between cards */
+    padding: 20px; /* padding inside cards */
+    width: auto; /* allow the card to grow with content */
+    max-width: 500px; /* maximum width of the card */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .learner-info {display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .learner-name,
+  .learner-score {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .leaderboard-container {
+        flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-content {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* use 100% of the available width */
+    max-width: 100%; /* ensures content doesn't overflow */
+    }
+
+  
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .top-learners-title {
+    order: -1; 
+    margin-bottom: 20px;
+  }
+  
+  .user-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  }
+  
+  /* Ensure the rest of the elements fit well on the page /
+  / Adjust colors, fonts, and padding to match the provided screenshots */
