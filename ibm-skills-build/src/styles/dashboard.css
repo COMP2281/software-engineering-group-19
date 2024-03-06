@@ -20,7 +20,7 @@ body {
 .sidebar {
   width: 250px;
   background-color: #ECF0F1; /* Light grey shade */
-  color: #2C3E50; /* Dark blue shade */
+  color: #007bff; /* Dark blue shade */
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Aligns items to start and end of the flex container */
@@ -31,28 +31,35 @@ body {
   height: 30px;
   margin-left: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .nav-list {
   list-style-type: none;
-  font-size: 18px;
-  line-height: 2.5;
   flex-grow: 1; /* Allows this element to grow and push the exit item to the bottom */
 }
 
-.nav-list .nav-item {
-  margin-top: 0;
-  padding-left: 20px;
-  cursor: pointer;
+.nav-list .nav-item, .button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold;
+  margin-right: 10px; /* Ensures space between nav items */
+  margin-bottom: 20px;
 }
 
-.nav-item:hover {
-  background-color: #34495E; /* Slightly lighter blue shade */
+.nav-item:hover, .button-link:hover {
+  background-color: #0056b3;
 }
 
 .nav-list .nav-exit {
   padding-left: 20px;
   cursor: pointer;
+  margin-top: auto; /* Moves logout to the bottom */
 }
 
 .main-content {
@@ -62,61 +69,81 @@ body {
   background-color: #FAFAFA; /* Light grey shade */
   overflow-y: auto; /* Allow vertical scrolling */
   padding: 20px;
+  text-align: center;
 }
 
-
-.search-bar {
-  background-color: #FFFFFF; /* White */
+.header {
+  text-align: center;
+}
+.search-bar{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search-bar input[type="text"] {
   padding: 10px 20px;
-  margin-bottom: 20px;
-}
-
-.welcome-banner {
-  color: #2C3E50; /* Dark blue shade */
-  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 250px; /* Adjust based on preference */
+  background-color: white;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 20px; /* Adds spacing from the header content */
+  box-shadow: 0 0 5px rgba(0,123,255,.5); /* Adds a slight shadow for depth */
+  text-align: center;
 }
 
 .video-banner {
+  text-align: center; /* Center the video and related content */
   margin-bottom: 20px;
 }
 
 .video-banner video {
-  width: 100%; /* Adjust as needed */
+  width: 80%; /* Adjust as needed */
   height: auto; /* Adjust as needed */
 }
 
-.carousel-section {
-  margin-bottom: 20px;
+.carousel-section, .my-classes .class-list .class-item {
+  text-align: center; /* Centers content within these sections */
 }
 
-.carousel .carousel-item {
-  background-color: #FFFFFF; /* White */
-  padding: 20px;
-  text-align: center;
-  outline: none;
-}
-
-.carousel .carousel-item h3 {
-  color: #2C3E50; /* Dark blue shade */
-  margin-bottom: 10px;
-}
-
-.carousel .carousel-item p {
-  color: #7F8C8D; /* Grey shade */
-  margin-bottom: 10px;
-}
-
-.carousel .carousel-item button {
-  background-color: #2980B9; /* Button color */
-  color: #FFFFFF; /* White */
-  border: none;
+.carousel .carousel-item button, .logout-button, .play-button {
+  display: inline-block;
   padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold;
+  border: none;
 }
 
-.carousel .carousel-item button:hover {
-  background-color: #3498DB; /* Lighter button color */
+.carousel .carousel-item button:hover, .logout-button:hover, .play-button:hover {
+  background-color: #0056b3;/* Lighter button color on hover */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold;
+  border: none;
+}
+.carousel .control-dots {
+  bottom: -25px; /* Adjust as needed */
+}
+.button-link:hover, .button-link:focus {
+  background-color: #0056b3;
+  color: #ffffff;
+  text-decoration: none; /* Ensures underline does not reappear on hover/focus */
 }
 
 .calendar {
