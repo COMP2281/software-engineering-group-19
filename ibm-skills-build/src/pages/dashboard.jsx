@@ -11,6 +11,7 @@ const localizer = momentLocalizer(moment);
 
 const Dashboard = () => {
   const [events, setEvents] = useState([]);
+  const [search, setSearch] = useState("");
 
   const addToCalendar = (course) => {
     // Assuming each course is 1 hour for simplicity
@@ -28,33 +29,24 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <nav className="sidebar">
         <img src="/assets/ibm_logo.png" alt="IBM SkillsBuild Logo" className="logo" />
-        <ul className="nav-list">
-          <li className="nav-item">
-            <a href="/dashboard">Dashboard</a>
-          </li>
-          <li className="nav-item">
-            <a href="/leaderboard">Leaderboard</a>
-          </li>
-          <li className="nav-item">
-            <a href="/homework">Homework</a>
-          </li>
-          <li className="nav-item">
-            <a href="/chatbot">Chatbot</a>
-          </li>
-          <li className="nav-item">
-            <a href="/">Logout</a>
-          </li>
-        </ul>
+        <div className="nav-list">
+          <a href="/dashboard" className="nav-item active">Dashboard</a>
+          <a href="/leaderboard" className="nav-item">Leaderboard</a>
+          <a href="/homework" className="nav-item">Homework</a>
+          <a href="/chatbot" className="nav-item">Chatbot</a>
+        </div>
+        <button className="nav-item nav-exit logout-button">Logout</button>
       </nav>
       <div className="main-content">
         <header>
-          <div className="search-bar">
-            <input type="text" />
-          </div>
+          
         </header>
         <div className="welcome-banner">
           <h1>Welcome, Alex</h1>
           <p>Have a good day!</p>
+        </div>
+        <div className="search-bar">
+          <input type="text" placeholder="Search" />
         </div>
         <div className="video-banner">
           <img src="/assets/Video.png" className="video" />
@@ -65,7 +57,7 @@ const Dashboard = () => {
               <h3>{course.title}</h3>
               <p>{course.category}</p>
               <p>{course.description}</p>
-              <a href={course.link} target="_blank" rel="noreferrer noopener">Go to course</a>
+              <a href={course.link} target="_blank" class="button-link" rel="noreferrer noopener">Go to course</a>
               <button onClick={() => addToCalendar(course)}>Add to Calendar</button>
             </div>
           ))}
