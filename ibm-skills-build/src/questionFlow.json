@@ -1,0 +1,57 @@
+[
+    {
+      "step": 1,
+      "question": "What is level would you rate your prior experience?",
+      "responses": [
+        { "text": "Beginner", "nextStep": 2 },
+        { "text": "Intermediate", "nextStep": 2 },
+        { "text": "Expert", "nextStep": 2 }
+      ]
+    },
+    {
+      "step": 2,
+      "question": "Do you have a topic of interest?",
+      "responses": [
+        { "text": "Yes", "nextStep": 3 },
+        { "text": "No", "nextStep": 3 }
+      ]
+    },
+    {
+        "step": 3,
+        "question": "Select the topic of interest",
+        "responses": [
+          { "text": "IBM Cloud", "nextStep": 4 },
+          { "text": "Capstone", "nextStep": 4 },
+          { "text": "Artificial Intelligence", "nextStep": 4 },
+          { "text": "Data Science", "nextStep": 4 },
+          { "text": "IBM Automation", "nextStep": 4 },
+          { "text": "IBM Security", "nextStep": 4 },
+          { "text": "Power Systems", "nextStep": 4 },
+          { "text": "IBM Quantum", "nextStep": 4 }
+            ]
+    },
+    {
+        "step": 4,
+        "question": "These are the courses I recommend:",
+        "//comment": "Show courses that are relevant to users skills level or topic of interest if yes to question 2", 
+        "responses": [ 
+          { "text": "Ok", "nextStep": 5 }
+        ]
+    },
+    {
+        "step": 5,
+        "question": "Are these courses relevant?",
+        "responses": [
+          { "text": "Yes", "nextStep": 6 },
+          { "text": "No", "nextStep": 6 }
+        ]
+    },
+    {
+        "step": 6,
+        "question": "Would you like to start again?",
+        "responses": [
+          { "text": "Yes", "nextStep": 1 },
+          { "text": "No", "nextStep": 1 }
+        ]
+    }
+  ]
