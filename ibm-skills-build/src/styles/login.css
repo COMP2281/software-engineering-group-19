@@ -5,7 +5,7 @@
 
 .background-image {
   flex: 1; /* Takes up half of the container */
-  background: url('../../public/assets/Login.png') no-repeat center center;
+  background: url('/assets/Login.png') no-repeat center center;
   background-size: cover; /* Cover the available space without being skewed */
   display: flex;
   justify-content: center;
