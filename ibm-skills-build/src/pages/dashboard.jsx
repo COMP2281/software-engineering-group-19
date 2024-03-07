@@ -3,8 +3,28 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import coursesData from "../course.json";
 import "../styles/dashboard.css";
+import { Calendar, momentLocalizer } from "react-big-calendar";
+import moment from "moment";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-big-calendar/lib/css/react-big-calendar.css";
+
+const localizer = momentLocalizer(moment);
 
 const Dashboard = () => {
+  const [events, setEvents] = useState([]);
+  const [search, setSearch] = useState("");
+
+  const addToCalendar = (course) => {
+    // Assuming each course is 1 hour for simplicity
+    const newEvent = {
+      title: course.title,
+      start: new Date(),
+      end: new Date(new Date().setHours(new Date().getHours() + 1)),
+      allDay: false,
+    };
+
+    setEvents(events.concat(newEvent));
+  };
   const cardsPerSlide = 2;
   // Group the courses into sub-arrays of the specified size
   const groupedCourses = [];
@@ -82,6 +102,14 @@ const Dashboard = () => {
       <div className="calendar">
         <div className="schedule">
           <p>Schedule</p>
+          <div className="calendar">
+            <Calendar
+              localizer={localizer}
+              events={events}
+              startAccessor="start"
+              endAccessor="end"
+            />
+          </div>
         </div>
       </div>
     </div>
