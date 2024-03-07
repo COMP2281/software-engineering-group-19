@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
-import { Calendar, momentLocalizer } from "react-big-calendar";
-import moment from "moment";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "react-big-calendar/lib/css/react-big-calendar.css";
-import coursesData from "../course.json"; // Make sure the path is correct
+import coursesData from "../course.json";
 import "../styles/dashboard.css";
 
-const localizer = momentLocalizer(moment);
-
 const Dashboard = () => {
-  const [events, setEvents] = useState([]);
-  const [search, setSearch] = useState("");
-
   const cardsPerSlide = 2;
-
   // Group the courses into sub-arrays of the specified size
   const groupedCourses = [];
   for (let i = 0; i < coursesData.length; i += cardsPerSlide) {
@@ -57,6 +48,7 @@ const Dashboard = () => {
         <div className="video-banner">
           <img src="/assets/Video.png" className="video" />
         </div>
+        <p className="featured">Featured Courses:</p>
         <Carousel
           showArrows={true}
           infiniteLoop={true}
@@ -64,6 +56,7 @@ const Dashboard = () => {
           interval={3000} // Change as needed
           showStatus={false}
           showThumbs={false}
+          transitionTime={550}
         >
           {groupedCourses.map((group, index) => (
             <div key={index} className="carousel-slide">
@@ -87,20 +80,12 @@ const Dashboard = () => {
         </Carousel>
       </div>
       <div className="calendar">
-        <div className="schedule"></div>
+        <div className="schedule">
+          <p>Schedule</p>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Dashboard;
-{
-  /* <div className="calendar">
-          <Calendar
-            localizer={localizer}
-            events={events}
-            startAccessor="start"
-            endAccessor="end"
-          />
-        </div> */
-}

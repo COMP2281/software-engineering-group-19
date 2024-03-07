@@ -12,7 +12,6 @@ body, h1, h2, h3, p, ul, li, button {
 /* Font setup */
 body {
   font-family: 'Arial', sans-serif;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Main layout styles */
@@ -20,14 +19,31 @@ body {
   display: flex;
   height: 100vh;
 }
+.featured{
+  text-align: left;
+  margin-top: 10px;
+}
 .schedule{
   padding: 2rem;
   width: 250px;
   background-color: #ffffff; /* White */
-  color: #007bff; /* Dark blue shade */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.schedule_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.schedule_card{
+  margin: 0 10px; /* Adjust spacing between cards */
+  display: flex; /* Distribute space inside the card */
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 .sidebar{
   padding: 2rem;
@@ -65,7 +81,9 @@ body {
 }
 
 .main-content {
-  flex-grow: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #FAFAFA; /* Light grey shade */
   overflow-y: auto; /* Allow vertical scrolling */
   padding: 20px;
@@ -73,6 +91,7 @@ body {
 }
 .welcome-banner{
   height: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -91,7 +110,7 @@ body {
 }
 
 .video {
-  width: 800px;
+  width: 600px;
   height: 300px;
 }
 
