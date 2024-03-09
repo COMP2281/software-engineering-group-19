@@ -38,7 +38,7 @@ const Dashboard = () => {
         <img
           src="/assets/ibm_skills_build.png"
           alt="IBM SkillsBuild Logo"
-          className="logo"
+          className="ibm_logo"
         />
         <div className="nav-list">
           <a href="/leaderboard" className="nav-item">

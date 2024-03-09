@@ -1,0 +1,58 @@
+/* Chatbot.css */
+.App {
+    height: 100vh; /* Adjust the height as necessary */
+    font-family: "Inter", sans-serif;
+  }
+  .questionnaire {
+    height: 70vh;
+    flex: 1; /* Take up all available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center questionnaire content vertically */
+    align-items: center; /* Center questionnaire content horizontally */
+    padding: 20px; /* Add some padding around the content */
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: white;
+    border: 2px solid #3649F9;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px; /* Adjust for more or less rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px; /* Adjust font size as necessary */
+  }
+  
+  .button:hover {
+    background-color: #3649F9;
+    color: white;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3649F9;
+    color: white;
+  }
+  
+  .logo img {
+    max-width: 100px; 
+    margin-top: 8px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }

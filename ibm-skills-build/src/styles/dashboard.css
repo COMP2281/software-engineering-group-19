@@ -5,10 +5,7 @@ body, h1, h2, h3, p, ul, li, button {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-.logo{
-  width: 200px;
-  margin-bottom: 100px;
- }
+
 /* Font setup */
 body {
   font-family: 'Arial', sans-serif;
@@ -49,13 +46,16 @@ body {
   padding: 2rem;
   width: 250px;
   background-color: #ffffff; /* White */
-  color: #007bff; /* Dark blue shade */
+  color: #3649F9; /* Dark blue shade */
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Aligns items to start and end of the flex container */
 }
-
+.ibm_logo{
+  width: 200px;
+}
 .nav-list {
+  margin-top: 100px;
   list-style-type: none;
   flex-grow: 1; /* Allows this element to grow and push the exit item to the bottom */
 }
@@ -63,7 +63,7 @@ body {
 .nav-item, .button-link, .carousel .carousel-item button, .logout-button, .play-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #3649F9;
   color: white;
   text-align: center;
   border-radius: 5px;
@@ -103,7 +103,7 @@ body {
   outline: none;
   width: 250px; /* Adjust based on preference */
   background-color: white;
-  color: #007bff;
+  color: #3649F9;
   font-weight: bold;
   box-shadow: 0 0 5px rgba(0,123,255,.5); /* Adds a slight shadow for depth */
   text-align: center;
@@ -173,7 +173,7 @@ body {
 
 .button-link, .add-to-calendar-btn {
   text-decoration: none;
-  background-color: #007bff;
+  background-color: #3649F9;
   color: white;
   padding: 10px 15px;
   border: none;
