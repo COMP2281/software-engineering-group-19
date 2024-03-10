@@ -14,7 +14,7 @@ function Chatbot() {
     // Determine the type based on the current step
     if (currentStep === 1) {
       responseType = "difficulty";
-    } else if (currentStep === 3) {
+    } else if (currentStep === 2) {
       responseType = "topic";
     }
 
@@ -39,21 +39,32 @@ function Chatbot() {
     const recommendedCourses = getRecommendedCourses();
 
     return (
-      <div>
-        <h2>Recommended Courses:</h2>
-        {recommendedCourses.length > 0 ? (
-          recommendedCourses.map((course, index) => (
-            <div key={index}>{course.title}</div>
-          ))
-        ) : (
-          <div>No courses found for your selection.</div>
-        )}
-        <button
-          className="button"
-          onClick={() => handleResponseClick({ nextStep: 5 })}
-        >
-          Ok
-        </button>
+      <div className="container">
+        <div>
+          <h2>Recommended Courses:</h2>
+          <div className="options">
+            {recommendedCourses.length > 0 ? (
+              recommendedCourses.map((course, index) => (
+                <a
+                  href={course.link}
+                  key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div
+                    className="recommended"
+                    // style={{ margin: "10px 0", display: "block" }}
+                  >
+                    {course.title}
+                  </div>
+                </a>
+              ))
+            ) : (
+              <div>No courses found for your selection.</div>
+            )}
+          </div>
+        </div>
       </div>
     );
   };
