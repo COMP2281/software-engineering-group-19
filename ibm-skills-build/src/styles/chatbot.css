@@ -59,7 +59,11 @@
       align-items: center;
       justify-content: center;
   }
-  .button:hover {
+  .button:hover{
+    background-color: #3649F9;
+    color: white;
+  }
+  .recommended:hover{
     background-color: #3649F9;
     color: white;
   }
@@ -89,4 +93,19 @@
   }
 h2{
   margin-bottom: 20px;
+}
+.sign-up-form input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #3649F9;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }

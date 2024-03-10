@@ -1,28 +1,43 @@
 [
     {
       "step": 1,
-      "question": "What is level would you rate your prior experience?",
+      "question": "Are you a registered user?",
       "responses": [
-        { "text": "Beginner", "nextStep": 2 },
-        { "text": "Intermediate", "nextStep": 2 },
-        { "text": "Expert", "nextStep": 2 }
+        { "text": "Yes", "nextStep": 3 },
+        { "text": "No", "nextStep": 2 }
       ]
     },
     {
-        "step": 2,
+      "step": 2,
+      "question": "Please Sign up for IBM SKills Build to access the courses.",
+      "responses": [
+        { "text": "Submit", "nextStep": 3 }
+      ]
+    },
+    {
+      "step": 3,
+      "question": "What is level would you rate your prior experience?",
+      "responses": [
+        { "text": "Beginner", "nextStep": 4 },
+        { "text": "Intermediate", "nextStep": 4 },
+        { "text": "Expert", "nextStep": 4 }
+      ]
+    },
+    {
+        "step": 4,
         "question": "Select the topic of interest",
         "responses": [
-          { "text": "IBM Cloud", "nextStep": 4 },
-          { "text": "Capstone", "nextStep": 4 },
-          { "text": "Artificial Intelligence", "nextStep": 4 },
-          { "text": "Data Science", "nextStep": 4 },
-          { "text": "IBM Automation", "nextStep": 4 },
-          { "text": "IBM Security", "nextStep": 4 },
-          { "text": "Power Systems", "nextStep": 4 },
-          { "text": "IBM Quantum", "nextStep": 4 }
+          { "text": "IBM Cloud", "nextStep": 5 },
+          { "text": "Capstone", "nextStep": 5 },
+          { "text": "Artificial Intelligence", "nextStep": 5 },
+          { "text": "Data Science", "nextStep": 5 },
+          { "text": "IBM Automation", "nextStep": 5 },
+          { "text": "IBM Security", "nextStep": 5 },
+          { "text": "Power Systems", "nextStep": 5 },
+          { "text": "IBM Quantum", "nextStep": 5 }
             ]
     },
     {
-        "step": 4
+        "step": 5
     }
   ]

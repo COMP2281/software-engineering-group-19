@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "../chatbot.json";
 import courses from "../course.json";
+import SignUpForm from "./signup";
 import "../styles/chatbot.css";
 
 function Chatbot() {
@@ -12,9 +13,9 @@ function Chatbot() {
     let responseType;
 
     // Determine the type based on the current step
-    if (currentStep === 1) {
+    if (currentStep === 3) {
       responseType = "difficulty";
-    } else if (currentStep === 2) {
+    } else if (currentStep === 4) {
       responseType = "topic";
     }
 
@@ -78,7 +79,11 @@ function Chatbot() {
 
     if (!currentQuestion) return <div>Loading...</div>;
 
-    if (currentQuestion.step === 4) {
+    if (currentStep === 2) {
+      return <SignUpForm onSignUp={() => setCurrentStep(3)} />;
+    }
+
+    if (currentQuestion.step === 5) {
       return renderRecommendations();
     }
 
