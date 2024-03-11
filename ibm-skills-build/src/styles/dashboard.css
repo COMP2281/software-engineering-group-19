@@ -1,0 +1,191 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Font setup */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main layout styles */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+.featured{
+  text-align: left;
+  margin-top: 10px;
+}
+.schedule{
+  padding: 2rem;
+  width: 250px;
+  background-color: #ffffff; /* White */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.schedule_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.schedule_card{
+  margin: 0 10px; /* Adjust spacing between cards */
+  display: flex; /* Distribute space inside the card */
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+.sidebar{
+  padding: 2rem;
+  width: 250px;
+  background-color: #ffffff; /* White */
+  color: #3649F9; /* Dark blue shade */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns items to start and end of the flex container */
+}
+.ibm_logo{
+  width: 200px;
+}
+.nav-list {
+  margin-top: 100px;
+  list-style-type: none;
+  flex-grow: 1; /* Allows this element to grow and push the exit item to the bottom */
+}
+
+.nav-item, .button-link, .carousel .carousel-item button, .logout-button, .play-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3649F9;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none; /* Removes underline from links */
+  font-weight: bold;
+  border: none;
+  margin-right: 10px; /* Ensures space between nav items */
+  margin-bottom: 20px;
+  width: 170px;
+}
+
+.nav-item:hover, .button-link:hover, .carousel .carousel-item button:hover, .logout-button:hover, .play-button:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FAFAFA; /* Light grey shade */
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 20px;
+  align-items: center;
+}
+.welcome-banner{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.search-bar input[type="text"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 250px; /* Adjust based on preference */
+  background-color: white;
+  color: #3649F9;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0,123,255,.5); /* Adds a slight shadow for depth */
+  text-align: center;
+}
+
+.video {
+  width: 600px;
+  height: 300px;
+}
+
+.carousel-section, .my-classes .class-list .class-item, .carousel .control-dots {
+  text-align: center; /* Centers content within these sections */
+  bottom: -25px; /* Adjust for .control-dots */
+}
+
+/* Header styles */
+
+.card {
+  margin: 0 10px; /* Adjust spacing between cards */
+  display: flex; /* Distribute space inside the card */
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+.course-desc{
+  height: 80px;
+}
+.card_title{
+  height: 80px;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.course-title {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.course-category {
+  font-size: 16px;
+  color: #666;
+}
+
+.course-description {
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-link, .add-to-calendar-btn {
+  text-decoration: none;
+  background-color: #3649F9;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button-link {
+  border: 1px solid transparent;
+}
+
+.button-link:hover, .add-to-calendar-btn:hover {
+  background-color: #0056b3;
+}

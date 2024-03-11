@@ -1,0 +1,111 @@
+/* Chatbot.css */
+.App {
+    height: 100vh; /* Adjust the height as necessary */
+    font-family: "Inter", sans-serif;
+  }
+  .questionnaire {
+    height: 70vh;
+    flex: 1; /* Take up all available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center questionnaire content vertically */
+    align-items: center; /* Center questionnaire content horizontally */
+    padding: 20px; /* Add some padding around the content */
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+  .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  }
+  .options {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items if needed */
+    width: 800px;
+    height: 800px;
+    overflow-x: hidden; /* Hide horizontal scrollbar, adjust if needed */
+    overflow-y: auto; /* Make vertical overflow scrollable */
+  }
+
+.button {
+    background-color: white;
+    border: 2px solid #3649F9;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px; /* Adjust for more or less rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px; /* Adjust font size as necessary */
+  }
+  .recommended{
+      background-color: white;
+      border: 2px solid #3649F9;
+      color: black;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px; /* Adjust for more or less rounded corners */
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 16px; /* Adjust font size as necessary */
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .button:hover{
+    background-color: #3649F9;
+    color: white;
+  }
+  .recommended:hover{
+    background-color: #3649F9;
+    color: white;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3649F9;
+    color: white;
+  }
+  
+  .logo img {
+    max-width: 100px; 
+    margin-top: 8px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+h2{
+  margin-bottom: 20px;
+}
+.sign-up-form input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #3649F9;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
