@@ -1,0 +1,388 @@
+[
+    {
+      "id": 1,
+      "title": "Getting Started with Enterprise-grade AI",
+      "category": "Capstone",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/course/view.php?id=236"
+    },
+    {
+      "id": 2,
+      "title": "Getting Started with Enterprise Data Science",
+      "category": "Capstone",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=9cd4e0d9-5c96-4866-9b29-c76e511e22b7"
+    },
+    {
+      "id": 3,
+      "title": "Getting Started with Threat Intelligence and Hunting",
+      "category": "Capstone",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/course/view.php?id=389"
+    },
+    {
+      "id": 4,
+      "title": "Getting Started with Cloud for the Enterprise",
+      "category": "Capstone",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/course/view.php?id=233"
+    },
+    {
+      "id": 5,
+      "title": "Getting Started with Enterprise-grade AI",
+      "category": "Artificial Intelligence",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=8d72f699-26ac-4542-a701-6b69f50e6b5f"
+    },
+    {
+      "id": 6,
+      "title": "Artificial Intelligence Fundamentals",
+      "category": "Artificial Intelligence",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/course/view.php?id=569"
+    },
+    {
+      "id": 7,
+      "title": "Fundamentals of Sustainability and Technology",
+      "category": "Artificial Intelligence",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/course/view.php?id=551"
+    },
+    {
+      "id": 8,
+      "title": "Building Trustworthy AI Enterprise Solutions",
+      "category": "Artificial Intelligence",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/course/view.php?id=387"
+    },
+    {
+      "id": 9,
+      "title": "Building AI Solutions Using Advanced Algorithms and Open Source Frameworks",
+      "category": "Artificial Intelligence",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/artificial-intelligence?ach_id=d92c9dca-c230-4dfb-b214-d18c56104d5d"
+    },
+    {
+      "id": 10,
+      "title": "Art of Prompt Writing",
+      "category": "Artificial Intelligence",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/artificial-intelligence?ach_id=9c047ace-65b8-4719-ba47-a6a9f0ffd975"
+    },
+    {
+      "id": 11,
+      "title": "OpenDS4All",
+      "category": "Artificial Intelligence",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=bcd9ff28-1bf5-45ba-9386-328ebb96a4ee"
+    },
+    {
+      "id": 12,
+      "title": "IBM AI Education",
+      "category": "Artificial Intelligence",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/artificial-intelligence?ach_id=6d92def9-70bd-4307-9fe8-d2b7372b94f1"
+    },
+    {
+      "id": 13,
+      "title": "Data Refinery Essentials",
+      "category": "Artificial Intelligence",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/artificial-intelligence?ach_id=84b143de-a18b-40b0-8c5c-46a6e9f511c3"
+    },
+    {
+      "id": 14,
+      "title": "Getting Started with Enterprise Data Science",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/capstone?ach_id=8d72f699-26ac-4542-a701-6b69f50e6b5f"
+    },
+    {
+      "id": 15,
+      "title": "Enterprise Data Science in Practice",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=9cd4e0d9-5c96-4866-9b29-c76e511e22b7"
+    },
+    {
+      "id": 16,
+      "title": "Machine Learning for Data Science Projects",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=2bdf0308-8170-455d-8936-9a036ea290a3"
+    },
+    {
+      "id": 17,
+      "title": "Data Fundamentals",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=e5c3f98b-ee96-45d4-b153-d58b1efb8b30"
+    },
+    {
+      "id": 18,
+      "title": "Constraint Programming with ILOG CP Optimizer",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=520052ab-1ee5-48c5-8f8f-a614a0971bb5"
+    },
+    {
+      "id": 19,
+      "title": "Overview of IBM Cognos Analytics",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=fcce46b0-df00-4abc-9b02-cefc3c52ef08"
+    },
+    {
+      "id": 20,
+      "title": "IBM Planning Analytics - Design & Develop Models in Workspace",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=94366672-0dd3-4ac6-bf44-9a0d78c43926"
+    },
+    {
+      "id": 21,
+      "title": "IBM Planning Analytics - Analyze Data and Create Reports",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=202b1758-c742-45c3-a8d2-d227bc01c6b8"
+    },
+    {
+      "id": 22,
+      "title": "IBM Cognos Framework Manager - Design Metadata Models",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=c6009472-5471-4d40-a3d4-c68fde05ceb4"
+    },
+    {
+      "id": 23,
+      "title": "IBM Cognos Analytics - Author Reports Fundamentals",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=72ba50d6-da72-407e-a8f8-1a0c1e3c972f"
+    },
+    {
+      "id": 24,
+      "title": "IBM Cognos Analytics - Author Reports Advanced",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=31fea6d3-db52-4277-9a4d-0dc964f41c80"
+    },
+    {
+      "id": 25,
+      "title": "IBM Cognos Analytics - Author Reports with Multidimensional Data",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=0fd39d43-923f-4c81-9d04-3eb642192833"
+    },
+    {
+      "id": 26,
+      "title": "IBM Cognos Analytics - Architecture and Logging",
+      "category": "Data Science",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/data-science?ach_id=cb5cf932-60fd-4bbd-9951-1bc8c0900e78"
+    },
+    {
+      "id": 27,
+      "title": "IBM Process Mining Collection",
+      "category": "IBM Automation",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/training/collection/processmining"
+    },
+    {
+      "id": 28,
+      "title": "IBM Robotic Process Automation - Basic I",
+      "category": "IBM Automation",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://learn.ibm.com/course/view.php?id=8373#section-2"
+    },
+    {
+      "id": 29,
+      "title": "IBM Robotic Process Automation - Basic II",
+      "category": "IBM Automation",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://learn.ibm.com/course/view.php?id=8382"
+    },
+    {
+      "id": 30,
+      "title": "Fundamentals of IBM Process Mining",
+      "category": "IBM Automation",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/training/course/fundamentals-of-ibm-process-mining-ZB846G"
+    },
+    {
+      "id": 31,
+      "title": "Journey to Cloud: Envisioning Your Solution",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/mod/tincanlaunch/view.php?id=3946"
+    },
+    {
+      "id": 32,
+      "title": "Cloud Computing Fundamentals",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/course/view.php?id=576"
+    },
+    {
+      "id": 33,
+      "title": "Journey to Cloud: Transforming Your Culture",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/mod/tincanlaunch/view.php?id=4403"
+    },
+    {
+      "id": 34,
+      "title": "Journey to Cloud: Orchestrating Your Solution",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/mod/tincanlaunch/view.php?id=4405"
+    },
+    {
+      "id": 35,
+      "title": "DevOps for Enterprise Business Agility",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://keyskill-clms.comprehend.ibm.com/course/view.php?id=228"
+    },
+    {
+      "id": 36,
+      "title": "Solution tutorials",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-tutorials"
+    },
+    {
+      "id": 37,
+      "title": "IBM Cloud Associate Solution Advisor",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/training/learning-paths-and-collections"
+    },
+    {
+      "id": 38,
+      "title": "Cloud Native Bootcamp",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://rxdb.info/?utm_source=domains&utm_medium=pizza-redirect&utm_campaign=cloudnative101.dev"
+    },
+    {
+      "id": 39,
+      "title": "IBM CloudLabs",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/blog/ibm-cloudlabs-free-interactive-kubernetes-tutorials/"
+    },
+    {
+      "id": 39,
+      "title": "IBM CloudLabs",
+      "category": "IBM Cloud",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/blog/ibm-cloudlabs-free-interactive-kubernetes-tutorials/"
+    },
+    {
+      "id": 40,
+      "title": "IBM Security Learning Academy",
+      "category": "IBM Security",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/security?ach_id=ae814370-9289-408a-b08d-26a97a9d459d"
+    },
+    {
+      "id": 41,
+      "title": "Getting Started with Threat Intelligence and Hunting",
+      "category": "IBM Security",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/security?ach_id=3f13c64c-c7ca-45d8-bce1-f05711460f09"
+    },
+    {
+      "id": 42,
+      "title": "Enterprise Security in Practice",
+      "category": "IBM Security",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/security?ach_id=27d09e4f-73b4-4006-b123-85a37e974a3c"
+    },
+    {
+      "id": 43,
+      "title": "Security Operations Center in Practice",
+      "category": "IBM Security",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/security?ach_id=23f032a6-87b9-4d60-9cff-dd18a089b324"
+    },
+    {
+      "id": 44,
+      "title": "IBM QRadar SIEM Foundations",
+      "category": "IBM Security",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/security?ach_id=391e3430-e89c-4aba-a067-605eb5f9f9a6"
+    },
+    {
+      "id": 45,
+      "title": "IBM QRadar SIEM Advanced Topics",
+      "category": "IBM Security",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/security?ach_id=efe68f7c-4ecc-4af3-986a-fd20767a254c"
+    },
+    {
+      "id": 46,
+      "title": "Developing Secure Software",
+      "category": "IBM Security",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/security?ach_id=5fa327da-d138-4893-989f-7f46e625ecab"
+    },
+    {
+      "id": 47,
+      "title": "IBM Engineering and Scientific Subroutine Library for Linux on Power",
+      "category": "Power Systems",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/power-systems"
+    },
+    {
+      "id": 48,
+      "title": "IBM Rational Developer for i RPG & COBOL Tools",
+      "category": "Power Systems",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "UNKNOWN"
+    },
+    {
+      "id": 49,
+      "title": "IBM Watson Machine Learning Accelerator",
+      "category": "Power Systems",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/power-systems"
+    },
+    {
+      "id": 50,
+      "title": "IBM XL Fortran",
+      "category": "Power Systems",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/power-systems"
+    },
+    {
+      "id": 51,
+      "title": "IBM XL C/C++",
+      "category": "Power Systems",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://www.ibm.com/academic/topic/power-systems"
+    },
+    {
+      "id": 52,
+      "title": "Qiskit Textbook",
+      "category": "IBM Quantum",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://qiskit.org/learn"
+    },
+    {
+      "id": 53,
+      "title": "Introduction to Quantum Computing and Quantum Hardware",
+      "category": "IBM Quantum",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://qiskit.org/learn/summer-school/introduction-to-quantum-computing-and-quantum-hardware-2020"
+    },
+    {
+      "id": 54,
+      "title": "Quantum Machine Learning",
+      "category": "IBM Quantum",
+      "description": "Learn the basics of data science using Python and SQL with this comprehensive course from IBM.",
+      "link": "https://qiskit.org/learn/course/machine-learning-course"
+    }    
+  ]
+  
