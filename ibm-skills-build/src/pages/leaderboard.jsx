@@ -4,13 +4,11 @@ import "../styles/leaderboard.css";
 const LeaderboardPage = () => {
 
   const learners = [
-    { name: "Noah Jones", score: 86 },
+    { name: "Noah Jones", score: 100 },
     { name: "Isabella Brown", score: 89 },
-    { name: "James Davis", score: 98 },
-    { name: "Benjamin Taylor", score: 83 },
-    { name: "Mia Thomas", score: 100 },
-    { name: "Isabella Jackson", score: 64 },
-    { name: "Mia Taylor", score: 58 }
+    { name: "James Davis", score: 72 },
+    { name: "Benjamin Taylor", score: 65 },
+    { name: "Mia Thomas", score: 57 },
   ];  
 
   return (
