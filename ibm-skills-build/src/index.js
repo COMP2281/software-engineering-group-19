@@ -5,7 +5,7 @@ import Homepage from "./pages/homepage";
 import Dashboard from "./pages/dashboard";
 import Chatbot from "./pages/chatbot";
 import Leaderboard from "./pages/leaderboard";
-
+import React from 'react';
 import {
   BrowserRouter,
   Routes, 
