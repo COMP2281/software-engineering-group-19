@@ -1,52 +1,60 @@
-import React from 'react';
-import '../styles/leaderboard.css';
-import ibmLogo from './ibm_logo.png'; // make sure the logo is in your src folder
+import React from "react";
+import "../styles/leaderboard.css"; 
 
-const Leaderboard = () => {
-    const learners = [
-        { name: 'Tika Sarak', score: 1200 },
-        // ... other learners
-    ];
+const LeaderboardPage = () => {
 
-    return (
-        <div className="leaderboard-container">
-            <aside className="sidebar">
-                <div className="logo-container">
-                    <img src={ibmLogo} alt="IBM Logo" className="logo" />
-                </div>
-                <nav className="navigation">
-                    <button className="nav-item">Dashboard</button>
-                    <button className="nav-item active">Leaderboard</button>
-                    <button className="nav-item">Homework</button>
-                    <button className="nav-item">Chatbot</button>
-                </nav>
-            </aside>
-            <main className="main-content">
-                <header className="header">
-                    <h1 className="top-learners-title">Top Learners</h1>
-                    <div className="user-actions">
-                        <button className="action-item">Logout</button>
-                        <button className="action-item">Dashboard</button>
-                        <button className="action-item">Home</button>
-                    </div>
-                </header>
-                <section className="learner-scores">
-                    {learners.map((learner, index) => (
-                        <div key={index} className="learner-card">
-                            <div className="learner-info">
-                                <div className="learner-name-label">Name</div>
-                                <div className="learner-name">{learner.name}</div>
-                            </div>
-                            <div className="learner-info">
-                                <div className="learner-score-label">Score</div>
-                                <div className="learner-score">{learner.score}</div>
-                            </div>
-                        </div>
-                    ))}
-                </section>
-            </main>
+  const learners = [
+    { name: "Noah Jones", score: 86 },
+    { name: "Isabella Brown", score: 89 },
+    { name: "James Davis", score: 98 },
+    { name: "Benjamin Taylor", score: 83 },
+    { name: "Mia Thomas", score: 100 },
+    { name: "Isabella Jackson", score: 64 },
+    { name: "Mia Taylor", score: 58 }
+  ];  
+
+  return (
+    <div className="leaderboard-container">
+      <nav>
+        <img
+          src="/assets/ibm_skills_build.png"
+          alt="IBM SkillsBuild Logo"
+          className="ibm_logo"
+        />
+        <div className="sidebar-list">
+          <a href="/dashboard" className="sidebar-item">
+            Dashboard
+          </a>
+          <a href="/homework" className="sidebar-item">
+            Homework
+          </a>
+          <a href="/chatbot" className="sidebar-item">
+            Chatbot
+          </a>
         </div>
-    );
+        <button className="sidebar-item logout">Logout</button>
+      </nav>
+
+      <div className="main-content">
+        <h1>Top Learners</h1>
+        {learners.map((learner, index) => (
+          <div key={index} className="learner-card">
+            <span className="blue-dot"></span> 
+            <div className="headers">
+              <div>
+                <div className="learner-header">Name</div>
+                <div className="learner-content">{learner.name}</div>
+              </div>
+              <div>
+                <div className="learner-header">Score</div>
+                <div className="learner-content">{learner.score}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
-export default Leaderboard;
+export default LeaderboardPage;
