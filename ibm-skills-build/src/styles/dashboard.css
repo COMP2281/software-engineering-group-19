@@ -26,6 +26,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: calc(100vh - 4rem); /* Assuming the same padding top and bottom, adjust if necessary */
+  overflow-y: auto; /* Enables vertical scrolling */
 }
 
 .sidebar {
@@ -171,4 +173,7 @@ body {
 
 .button-link:hover, .add-to-calendar-btn:hover {
   background-color: #0056b3;
+}
+.adding-mode .rbc-timeslot-group {
+  border-color: blue; /* Adjust based on your exact needs */
 }
