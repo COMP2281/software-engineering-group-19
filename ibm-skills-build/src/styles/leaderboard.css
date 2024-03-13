@@ -2,7 +2,7 @@
     height: 100vh;
     display: flex;
 }
-nav {
+.side {
   padding: 2rem;
   width: 250px;
   background-color: #ffffff; 

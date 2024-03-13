@@ -13,7 +13,7 @@ const LeaderboardPage = () => {
 
   return (
     <div className="leaderboard-container">
-      <nav>
+      <nav className="side">
         <img
           src="/assets/ibm_skills_build.png"
           alt="IBM SkillsBuild Logo"
