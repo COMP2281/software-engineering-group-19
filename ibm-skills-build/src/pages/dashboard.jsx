@@ -16,7 +16,7 @@ const Dashboard = () => {
   const [isAdding, setIsAdding] = useState(false); // Flag to toggle adding mode
   const [calendarClasses, setCalendarClasses] = useState(""); // To toggle calendar classes for appearance
   const [selectedCourse, setSelectedCourse] = useState(null);
-  
+
   const addToCalendar = (course) => {
     // Example: assuming course has startTime and endTime in ISO 8601 format
     const newEvent = {
@@ -25,7 +25,7 @@ const Dashboard = () => {
       end: new Date(course.endTime), // or your logic to set the end time
       allDay: false,
     };
-  
+
     setEvents([...events, newEvent]);
   };
 
@@ -43,14 +43,14 @@ const Dashboard = () => {
         end: slotInfo.end,
         allDay: false,
       };
-  
+
       setEvents([...events, newEvent]);
       setIsAdding(false);
       setCalendarClasses(""); // Reset the visual indication of adding mode
       setSelectedCourse(null); // Clear the selected course
     }
   };
-      
+
   const cardsPerSlide = 2;
   // Group the courses into sub-arrays of the specified size
   const groupedCourses = [];
@@ -77,7 +77,9 @@ const Dashboard = () => {
             Chatbot
           </a>
         </div>
-        <button className="nav-item nav-exit logout-button">Logout</button>
+        <a href="/leaderboard" className="nav-item">
+          Home
+        </a>
       </nav>
 
       <div className="main-content">
@@ -104,43 +106,49 @@ const Dashboard = () => {
           showThumbs={false}
           transitionTime={550}
         >
-
-      
-        {groupedCourses.map((group, index) => (
-          <div key={index} className="carousel-slide">
-            {group.map((course) => (
-              <div key={course.id} className="card">
-                <p className="card_title">{course.title}</p>
-                <div className="course_desc">
-                  <p>{course.description}</p>
+          {groupedCourses.map((group, index) => (
+            <div key={index} className="carousel-slide">
+              {group.map((course) => (
+                <div key={course.id} className="card">
+                  <p className="card_title">{course.title}</p>
+                  <div className="course_desc">
+                    <p>{course.description}</p>
+                  </div>
+                  <div className="card-actions">
+                    <a href={course.link} className="course-link">
+                      <span className="material-symbols-outlined">
+                        arrow_right_alt
+                      </span>
+                    </a>
+                    <button
+                      className="add-to-calendar-btn"
+                      onClick={() => startAddingToCalendar(course)}
+                    >
+                      Add to Calendar
+                    </button>
+                  </div>
                 </div>
-                <div className="card-actions">
-                  <a href={course.link} className="course-link">
-                    <span className="material-symbols-outlined">arrow_right_alt</span>
-                  </a>
-                  <button className="add-to-calendar-btn" onClick={() => startAddingToCalendar(course)}>Add to Calendar</button>
-                </div>
-              </div>
-            ))}
-          </div>
-        ))}
+              ))}
+            </div>
+          ))}
         </Carousel>
       </div>
       <div className="calendar">
         <div className="schedule">
           <p>Schedule</p>
           <div className="calendar">
-          {/* Calendar component... */}
-          <Calendar
-            localizer={localizer}
-            events={events}
-            startAccessor="start"
-            endAccessor="end"
-            onSelectSlot={handleSelectSlot}
-            selectable={true} // Allows slot selection
-            defaultView="week" // Sets the default view to week
-            className={calendarClasses} // Use this to control the appearance
-          />
+            {/* Calendar component... */}
+            <Calendar
+              localizer={localizer}
+              events={events}
+              startAccessor="start"
+              endAccessor="end"
+              onSelectSlot={handleSelectSlot}
+              selectable={true} // Allows slot selection
+              defaultView="week" // Sets the default view to week
+              className={calendarClasses} // Use this to control the appearance
+              views={["week", "day"]}
+            />
           </div>
         </div>
       </div>
