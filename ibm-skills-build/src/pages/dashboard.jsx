@@ -77,7 +77,7 @@ const Dashboard = () => {
             Chatbot
           </a>
         </div>
-        <a href="/leaderboard" className="nav-item">
+        <a href="/" className="nav-item">
           Home
         </a>
       </nav>

@@ -1,15 +1,14 @@
 import React from "react";
-import "../styles/leaderboard.css"; 
+import "../styles/leaderboard.css";
 
 const LeaderboardPage = () => {
-
   const learners = [
     { name: "Noah Jones", score: 100 },
     { name: "Isabella Brown", score: 89 },
     { name: "James Davis", score: 72 },
     { name: "Benjamin Taylor", score: 65 },
     { name: "Mia Thomas", score: 57 },
-  ];  
+  ];
 
   return (
     <div className="leaderboard-container">
@@ -30,14 +29,16 @@ const LeaderboardPage = () => {
             Chatbot
           </a>
         </div>
-        <button className="sidebar-item logout">Logout</button>
+        <a href="/" className="nav-item">
+          Home
+        </a>
       </nav>
 
       <div className="main-content">
         <h1>Top Learners</h1>
         {learners.map((learner, index) => (
           <div key={index} className="learner-card">
-            <span className="blue-dot"></span> 
+            <span className="blue-dot"></span>
             <div className="headers">
               <div>
                 <div className="learner-header">Name</div>
