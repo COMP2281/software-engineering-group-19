@@ -66,14 +66,14 @@ const Dashboard = () => {
         </div>
 
         <div className="video-banner">
-          <img src="/assets/Video.png" className="video" />
+          <img src="/assets/card_3.jpg" className="main_image" />
         </div>
         <p className="featured">Featured Courses:</p>
         <Carousel
           showArrows={true}
           infiniteLoop={true}
           autoPlay={true}
-          interval={3000} // Change as needed
+          interval={3000} 
           showStatus={false}
           showThumbs={false}
           transitionTime={550}

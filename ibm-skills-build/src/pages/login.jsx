@@ -17,7 +17,7 @@ const Login = () => {
 
     if (email === mockEmail && password === mockPassword) {
       console.log("Login Success");
-      navigate("/homepage");
+      navigate("/dashboard");
     } else {
       console.error("Login Failed");
       setShowTooltip(true); // Show tooltip on login failure

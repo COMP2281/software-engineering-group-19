@@ -11,9 +11,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<LoginPage />} />
-      <Route path="/homepage" element={<Homepage />} />
+    <Routes>0
+      <Route path="/" element={<Homepage />} />
+      <Route path="/login" element={<LoginPage />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/chatbot" element={<Chatbot />} />
       <Route path="/leaderboard" element={<LeaderboardPage />} />

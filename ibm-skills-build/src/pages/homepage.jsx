@@ -30,6 +30,7 @@ const Homepage = () => {
           <img src="/assets/ibm_logo.png" alt="Logo" />
         </div>
         <div className="nav-links">
+          <a href="/login">Login</a>
           <a href="/dashboard">Dashboard</a>
           <a href="/Leaderboard">Leaderboard</a>
           <a href="/chatbot">Chatbot</a>
