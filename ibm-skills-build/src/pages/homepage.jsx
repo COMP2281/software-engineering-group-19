@@ -3,26 +3,29 @@ import "../styles/homepage.css";
 import coursesData from "../course.json"; // Adjust the path as necessary
 // Function to shuffle an array using the Fisher-Yates shuffle algorithm
 function shuffleArray(array) {
-  let currentIndex = array.length, randomIndex;
-  
+  let currentIndex = array.length,
+    randomIndex;
+
   // While there remain elements to shuffle...
   while (currentIndex !== 0) {
     // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
-    
+
     // And swap it with the current element.
     [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex], array[currentIndex]];
+      array[randomIndex],
+      array[currentIndex],
+    ];
   }
-  
+
   return array;
 }
 
 const Homepage = () => {
   // Shuffle the courses data and slice the first 4 elements
   const shuffledCourses = shuffleArray([...coursesData]).slice(0, 4);
-  
+
   return (
     <>
       <nav className="navbar">
@@ -50,24 +53,29 @@ const Homepage = () => {
       </div>
       <hr />
       <div className="featured-courses-section">
-        <div className="cards-container">
-          <div className="section-title">
-            <p style={{ fontSize: "1.5rem" }}>Featured Courses</p>
-          </div>
-          <div className="cards">
-            {shuffledCourses.map((course) => (
-              <div className="card" key={course.id}>
-                <img src={`/assets/card_2.jpg`} alt={course.title} /> {/* Adjust image path as necessary */}
-                <p className="card_title">{course.title}</p>
-                <p>{course.description}</p>
-                <a href={course.link} className="course-link">
-                  <span className="material-symbols-outlined">arrow_right_alt</span>
-                </a>
-              </div>
-            ))}
-          </div>
+        <div className="section-title">
+          <p style={{ fontSize: "1.5rem" }}>Featured Courses</p>
+        </div>
+        <div className="cards">
+          {shuffledCourses.map((course) => (
+            <div className="home-card" key={course.id}>
+              <img
+                src={`/assets/card_2.jpg`}
+                alt={course.title}
+                className="card-image"
+              />
+              <p className="card_title">{course.title}</p>
+              <p>{course.description}</p>
+              <a href={course.link} className="course-link">
+                <span className="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+              </a>
+            </div>
+          ))}
         </div>
       </div>
+
       <footer className="navbar">
         <p>IBM Skills Build Group-19</p>
       </footer>
