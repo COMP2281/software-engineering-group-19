@@ -96,7 +96,7 @@ const Dashboard = () => {
         <div className="video-banner">
           <img src="/assets/card_3.jpg" className="main_image" />
         </div>
-        <p className="featured">Featured Courses:</p>
+        <p className="featured">Available Courses:</p>
         <Carousel
           showArrows={true}
           infiniteLoop={true}

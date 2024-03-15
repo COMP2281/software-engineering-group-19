@@ -93,10 +93,9 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-.video {
-  width: 600px;
-  height: 350px;
-  margin: 20px 0;
+
+.main_image{
+  width: 30rem;
 }
 
 .carousel-section, .my-classes .class-list .class-item, .carousel .control-dots {
@@ -111,7 +110,9 @@ body {
   display: flex; /* Distribute space inside the card */
   flex-direction: column;
   justify-content: space-around;
-  height: 300px;
+  height: 13rem;
+  width: 23rem;
+  padding: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 .course-desc{
